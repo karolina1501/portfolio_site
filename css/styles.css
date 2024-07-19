@@ -1,0 +1,124 @@
+body {
+  background-color: rgb(241, 240, 245);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #1f1c1c;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 2;
+  font-weight: 650;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #1f1c1c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5d8dcf;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(51, 11, 1);
+}
+
+.button {
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #080808;
+  background-color: #071324;
+}
+
+.button:hover,
+.button.focus {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #1a4582;
+  color: #fff;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #0f0160;
+  text-transform: uppercase;
+  border: 1.5px solid #0f0160;
+}
+
+.button.contact:hover,
+.button.hover:focus {
+  background-color: rgb(203, 203, 246);
+  color: #060606;
+}
+
+.button.contact:active {
+  background-color: #1a4582;
+  color: #fff;
+}
+
+.header {
+  background-color: #e9eff8;
+  padding: 50px;
+}
+
+.about {
+  padding: 100px;
+  background-color: #fff;
+}
+
+.project-1 {
+  background-color: #fff;
+  padding: 100px;
+}
+
+#hero {
+  background-color: rgb(21, 2, 132);
+  color: #fff;
+  padding: 50px;
+}
+
+#work {
+  background-color: #fff;
+  padding: 100px;
+}
+
+#contact {
+  padding: 50px;
+}
