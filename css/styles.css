@@ -7,28 +7,32 @@ body {
   color: #1f1c1c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  line-height: 2;
+  line-height: 1.8em;
   font-weight: 650;
 }
 
 h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.8em;
-}
-
-h3 {
   font-size: 1.6em;
 }
 
-h4 {
+h2 {
   font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
 }
 
 img {
@@ -93,13 +97,7 @@ a:active {
   color: #fff;
 }
 
-.header {
-  background-color: #e9eff8;
-  padding: 50px;
-}
-
 .about {
-  padding: 100px;
   background-color: #fff;
 }
 
@@ -108,17 +106,107 @@ a:active {
   padding: 100px;
 }
 
-#hero {
-  background-color: rgb(21, 2, 132);
-  color: #fff;
-  padding: 50px;
-}
-
 #work {
   background-color: #fff;
-  padding: 100px;
+  padding: 10px;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #c3d9f7;
+  text-align: center;
+  padding: 10px, 0;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #060125;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li > a:visited {
+  color: #071324;
+}
+
+nav > ul > li > a:hover {
+  color: #5d8dcf;
+}
+
+nav > ul > li > a:active {
+  color: rgb(97, 109, 131);
+}
+
+#hero {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #dfebfc;
+  color: #111010;
+}
+
+.box-shadow {
+  width: 100%;
+  height: 109.99px;
+  background: #f8f8f8;
+  border: #0c3187 solid 1px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: inline-block;
+}
+
+main {
+  padding-top: 109.98px;
+}
+
+.easy {
+  max-width: 600px;
+}
+
+.social {
+  max-width: 50px;
+  margin: 30px;
 }
 
 #contact {
-  padding: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
