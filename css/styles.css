@@ -97,10 +97,6 @@ a:active {
   color: #fff;
 }
 
-.about {
-  background-color: #fff;
-}
-
 .project-1 {
   background-color: #fff;
   padding: 100px;
@@ -133,7 +129,7 @@ a:active {
 }
 
 header {
-  background-color: #c3d9f7;
+  background-color: #fafafd;
   text-align: center;
   padding: 10px, 0;
   position: fixed;
@@ -196,10 +192,6 @@ main {
   padding-top: 109.98px;
 }
 
-.easy {
-  max-width: 600px;
-}
-
 .social {
   max-width: 50px;
   margin: 30px;
@@ -209,4 +201,35 @@ main {
   text-align: center;
   display: inline-block;
   width: 100%;
+}
+
+.my_pic {
+  float: left;
+  max-width: 500px;
+}
+
+#Skills-Tools {
+  padding: 30px 50px;
+}
+
+.logo_easy {
+  max-width: 400px;
+  float: right;
+}
+
+.paragraph {
+  padding: 30px;
+}
+
+.aglogos {
+  max-width: 200px;
+}
+
+.emoji {
+  max-width: 200px;
+  float: right;
+}
+
+.easy {
+  max-width: 500px;
 }
