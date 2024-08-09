@@ -64,6 +64,7 @@ a:active {
   border-radius: 15px;
   border: 1px solid #080808;
   background-color: #071324;
+  color: white;
 }
 
 .button:hover,
