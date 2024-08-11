@@ -65,18 +65,19 @@ a:active {
   border: 1px solid #080808;
   background-color: #071324;
   color: white;
+  transition: 0.2s opacity;
 }
 
 .button:hover,
 .button.focus {
-  background-color: transparent;
-  color: black;
+  color: white;
   border: 1px solid black;
   text-decoration: none;
+  opacity: 0.7;
 }
 
 .button:active {
-  background-color: #1a4582;
+  background-color: #054aab;
   color: #fff;
 }
 
@@ -116,17 +117,20 @@ a:active {
   margin: 25px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero {
-  text-align: center;
-}
-
 .logo {
   max-width: 250px;
+  padding-top: 10px;
 }
 
 header {
@@ -175,6 +179,11 @@ nav > ul > li > a:active {
   padding: 20px 0;
   background-color: #dfebfc;
   color: #111010;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 .box-shadow {
@@ -209,10 +218,6 @@ main {
   max-width: 500px;
 }
 
-#Skills-Tools {
-  padding: 30px 50px;
-}
-
 .logo_easy {
   max-width: 400px;
   float: right;
@@ -233,4 +238,71 @@ main {
 
 .easy {
   max-width: 500px;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    display: inline-block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
 }
