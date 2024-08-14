@@ -1,6 +1,8 @@
-var greeting = 'Hi! Welcome to My Portfolio Site';
-console.log(greeting);
-
-console.log('Hello World');
-
-
+function menuToggle() {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'navtoggle';
+    }
+  }

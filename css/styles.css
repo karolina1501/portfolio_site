@@ -129,27 +129,16 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   padding-top: 10px;
 }
 
 header {
   background-color: #fafafd;
-  text-align: center;
-  padding: 10px, 0;
+  padding: 10px 0 4px;
   position: fixed;
   display: inline-block;
   width: 100%;
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-}
-
-nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -159,6 +148,11 @@ nav > ul > li > a {
   color: #060125;
   display: inline-block;
   width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 nav > ul > li > a:visited {
@@ -199,7 +193,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 109.98px;
+  padding-top: 50px;
 }
 
 .social {
@@ -305,4 +299,57 @@ main {
 
 .cloud-back {
   animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba ( 255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+@media only screen and (min-width: 641px) {
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
