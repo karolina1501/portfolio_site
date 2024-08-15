@@ -1,7 +1,7 @@
 body {
   background-color: rgb(241, 240, 245);
   font-family: "Montserrat", sans-serif;
-  font-size: 18;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
   color: #1f1c1c;
@@ -136,7 +136,13 @@ a:active {
 header {
   background-color: #fafafd;
   padding: 10px 0 4px;
+  text-align: canter;
   position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+nav {
   display: inline-block;
   width: 100%;
 }
@@ -151,6 +157,12 @@ nav > ul > li > a {
 }
 
 nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
   list-style-type: none;
   padding: 0;
 }
@@ -193,7 +205,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .social {
@@ -315,7 +327,6 @@ main {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 0;
 }
 
 .navtoggle.responsive nav {
@@ -325,7 +336,7 @@ main {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba ( 255, 127, 80, 0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -337,8 +348,20 @@ main {
     max-width: 250px;
   }
 
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
   nav > ul > li {
     display: inline-block;
+    position: relative;
   }
 
   .navtoggle li:not(:last-child) {
