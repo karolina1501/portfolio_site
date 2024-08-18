@@ -137,7 +137,6 @@ header {
   background-color: #fafafd;
   padding: 10px 0 4px;
   text-align: canter;
-  position: fixed;
   display: inline-block;
   width: 100%;
 }
@@ -153,7 +152,6 @@ nav > ul > li > a {
   font-weight: 800;
   color: #060125;
   display: inline-block;
-  width: 100%;
 }
 
 nav > ul {
@@ -336,7 +334,8 @@ main {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(11, 35, 218, 0.5);
+  background-color: #bed9f7;
 }
 
 .navtoggle.responsive li:last-child {
@@ -370,9 +369,5 @@ main {
 
   .navtoggle li:last-child {
     display: none;
-  }
-
-  nav > ul {
-    margin: 1em 0;
   }
 }
